@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+//these imports help with: connecting to a URL, reading its response and handling exceptio
 // video to load jar
 //https://www.youtube.com/watch?v=QAJ09o3Xl_0 (from about 37 seconds)
 
@@ -62,6 +62,10 @@ public class C_ReadSWAPI {
         JSONParser parser = new JSONParser();
         JSONObject json = (JSONObject) parser.parse(jsonString);
         System.out.println("JSON: " + json);
+
+        //get the name of our person and print it to the screen
+        String name = (String) json.get("name") ;
+        System.out.println("NAME: " + name);
 
         // get a single value out of the json
         String height = (String) json.get("height");

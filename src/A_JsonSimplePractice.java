@@ -21,3 +21,6 @@ public class A_JsonSimplePractice {
     }
 }
 
+
+//Modify JSON object to include "Major" and "Grade Level".
+//Extract and print the "Student Name" and their "Major" on one print line.
